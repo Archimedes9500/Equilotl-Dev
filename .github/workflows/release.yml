@@ -269,17 +269,6 @@ jobs:
           name: Equilotl-linux
           path: linux
 
-      - name: "Download MacOS Artifacts"
-        uses: actions/download-artifact@v8
-        with:
-          name: Equilotl-macos
-          path: macos
-
-      - uses: actions/download-artifact@v8
-        with:
-          name: Equilotl-macos-arm64
-          path: macos
-
       - name: "Download Windows Artifacts"
         uses: actions/download-artifact@v8
         with:
@@ -307,8 +296,4 @@ jobs:
             linux/Equilotl-wayland
             linux/Equilotl
             linux/EquilotlCli-linux
-            macos/Equilotl-darwin-x64.zip
-            macos/Equilotl-darwin-arm64.zip
-            macos/EquilotlCli-darwin-x64
-            macos/EquilotlCli-darwin-arm64
             windows/Equilotl*.exe
